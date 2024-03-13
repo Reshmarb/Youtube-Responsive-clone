@@ -1,0 +1,391 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: black;
+}
+
+.navbar{
+    /* height: 55px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+
+}
+header{
+    position:fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: #040404;
+    padding-bottom: 1rem;
+}
+
+
+
+.left-nav{
+    display: flex;
+    align-items:center ;
+    margin-left: 30px;
+}
+
+.left-nav i{
+    font-size: 20px;
+}
+
+.left-nav img{
+    height: 20px;
+    padding-left: 20px;
+    
+}
+
+.mid-nav{
+    /* width: 850px; */
+    /* margin-right: 150px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 40px; */
+    /* margin-left: 170px; */
+
+}
+
+.search{
+    background-color: transparent;
+    width: 60%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border:0.5px solid #747373;
+
+   
+
+
+}
+
+.search input{
+    border: none;
+    background-color: transparent;
+    margin-top: 8px;
+    margin-left: 15px;
+    /* height: 100%; */
+
+}
+
+.search-icon {
+    width: 45px;
+    height: 33px;
+    font-size: 20px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #282626;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-right:0.5px solid #747373 ;
+    border-top:0.5px solid #747373 ;
+    border-bottom:0.5px solid #747373 ;
+
+
+}
+
+.mid-nav .voice{
+    width: 40px;
+    height: 35px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#282626;
+    border-radius: 50%;
+}
+
+.mid-nav .voice:hover{
+    background-color:rgb(74, 67, 67);
+    border-radius: 50%;
+}
+
+
+.right-nav{
+    width: 180px;
+    height: 35px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    margin-right: 60px;
+}
+
+.right-nav .vid-icon{
+    width:35px;
+    height:35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-nav .vid-icon:hover{
+    background-color:rgb(74, 67, 67);
+    border-radius: 50%;
+}
+
+.right-nav .bell-icon{
+    width:35px ;
+    height:35px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-nav .bell-icon:hover{
+    background-color:rgb(74, 67, 67);
+    border-radius: 50%;
+}
+
+.right-nav p{
+    width:35px ;
+    height:35px ;
+    background-color:rgb(64, 64, 183);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-filter{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+ .filter-box{
+    font-size: 13px;
+    padding: 8px 12px;
+    text-align: center;
+    background-color:#282626 ;
+    border-radius: 8px;
+}
+
+.filter-box:hover{
+    background-color:rgb(74, 67, 67);
+    border-radius: 8px;
+}
+
+.grey{
+    font-size: 16px;
+    color: grey;
+
+}
+
+
+/* styling of main scroll-bar */
+
+.scroll-bar{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* gap: 10px; */
+    /* margin:20px ; */
+    padding-top: 8rem;
+    padding-left: 4rem;
+}
+
+.postimage-container{
+    width: 320px;
+    height: 200px;
+    /* border-radius: 15px; */
+}
+.postimage-container img{
+    width: 320px;
+    height: 200px;
+    border-radius: 15px;
+}
+
+.channel-name{
+    transition: .3s ease-in-out;
+}
+.channel-name:hover{
+    color: rgb(198, 197, 197);
+}
+
+.post-description{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.profile-box{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+.profile-box img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+
+}
+
+/* styling of side-bar */
+
+.side-bar{
+    width: 65px;
+    height: 100vh;
+    position: fixed;
+    top: 7rem;
+
+
+}
+
+.side-bar-container{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 30px;
+}
+
+.side-bar-icon{
+    font-size: 18px;
+    text-align: center;
+
+} 
+.side-bar-description{
+    font-size: 10px;
+    text-align: center;
+}   
+
+/* Responsive CSS using Media Queries */
+@media (max-width: 1200px) {
+    .mid-nav {
+        width: auto; /* Adjust width as needed */
+        margin-right: 0; /* Remove right margin */
+        margin-left: 0; /* Remove left margin */
+        
+    }
+
+    .search {
+        width: 50%; /* Adjust width as needed */
+    }
+
+    .scroll-bar {
+        padding-left: 2rem; /* Adjust left padding */
+    }
+
+
+
+    /* Adjust sidebar width */
+    .side-bar-description {
+        
+        display: none;
+    }
+
+    /* Adjust font size and icon size for smaller screens */
+    .side-bar-icon {
+        font-size: 16px;
+    }
+
+    .side-bar-description {
+        font-size: 8px;
+    }
+    nav-filter{
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+     .filter-box{
+        font-size: 10px;
+        
+    }
+}
+
+@media (max-width: 768px) {
+    .mid-nav {
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .scroll-bar {
+        padding-left: 1rem;
+    }
+
+    /* Adjust font size and icon size for even smaller screens */
+    .side-bar-icon {
+        font-size: 14px;
+    }
+
+    .side-bar-description {
+        font-size: 6px;
+    }
+
+    .search{
+        
+        width: 40%;
+        height: 100%;
+        
+        
+       
+    
+    
+    }
+
+    .mid-nav{
+        /* width: 850px; */
+        /* margin-right: 150px; */
+        
+        align-items: left;
+        justify-content: left;
+        /* height: 40px; */
+        /* margin-left: 170px; */
+    
+    }
+
+    .right-nav{
+        width: 100px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: row;
+        
+    }
+
+
+    .navbar{
+        /* height: 55px; */
+        display: flex;
+    
+        flex-direction: row;
+    
+    
+}
+nav-filter{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+ .filter-box{
+    font-size: 10px;
+    
+}
+
+
+
+
+/* Add more media queries as needed for smaller screen sizes */
+
+
+
+}
+@media (max-width: 680px){
+    .right-nav{
+        display: none;
+    }
+}
